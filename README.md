@@ -2,9 +2,15 @@ Earthquake Zen Garden
 This is a simple app that shows a homepage with a list of earthquakes.
 
 ### Development
-* `webpack.congig.js` - Configures webpack
 * `.eslintrc` - Configures ESLint rules
 * `README.md` - This awesome file
+
+### Build
+* `node_modules/` - Installed JS libraries
+* `package.json` - Specifies JS libraries (build tools and client-side)
+* `webpack.congig.js` - Configures webpack
+* `yarn.lock` - Tracks installed JS libraries
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -18,11 +24,7 @@ The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
 ### `yarn build`
-
 Builds the app for production to the `dist` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
 
 

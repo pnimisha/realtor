@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import { useParams } from 'react-router-dom';
 
@@ -47,8 +48,7 @@ const Detail = (props) => {
       );
     }
   }
-
-  return '<>';
+  return (<div />);
 };
 
 export default Detail;

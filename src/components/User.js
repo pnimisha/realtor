@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 
 const User = (props) => {
@@ -39,7 +40,7 @@ const User = (props) => {
       </div>
     );
   }
-  return '<>';
+  return (<div />);
 };
 
 export default User;

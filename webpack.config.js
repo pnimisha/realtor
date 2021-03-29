@@ -11,10 +11,15 @@ module.exports = {
   },
   module: {
     rules: [
-      { test: /\.(js)$/, use: 'babel-loader',exclude: /node_modules/ },
-      { test: /\.css$/, use: ['style-loader', 'css-loader', 'sass-loader'] },
+      { test: /\.(js)$/, use: 'babel-loader', exclude: /node_modules/ },
       {
-        test: /\.s[ac]ss$/i,
+        test: /\.css$/,
+        exclude: /node_modules/,
+        use: ['style-loader', 'css-loader'],
+      },
+      {
+				test: /\.s[ac]ss$/i,
+        exclude: /node_modules/,
         use: ['style-loader', 'css-loader', 'sass-loader'],
       },
     ],
