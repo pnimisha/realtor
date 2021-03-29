@@ -122,6 +122,13 @@ table.detail {
 }
 .home-page {
   table {
+    thead {
+      div {
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
     td {
 			text-align : center;
 		}

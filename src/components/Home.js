@@ -39,28 +39,28 @@ const Home = (props) => {
           <thead>
             <tr>
               <th>
-                <div type="button" onClick={() => doSort('title')}>
+                <div onClick={() => doSort('title')}>
                   Title
                 </div>
               </th>
               <th>
-                <div type="button" onClick={() => doSort('mag')}>
+                <div onClick={() => doSort('mag')}>
                   Magnitude
                 </div>
               </th>
               <th>
-                <div type="button" onClick={() => doSort('time')}>
+                <div onClick={() => doSort('time')}>
                   Time
                 </div>
               </th>
             </tr>
           </thead>
           <tbody>
-            {sortedItems.map((product) => (
-              <tr key={product.id}>
-                <td><Link to={`/${product.id}`}>{product.properties.title}</Link></td>
-                <td>{product.properties.mag}</td>
-                <td>{new Date(product.properties.time).toLocaleString('en-US', { timeStyle: 'medium', dateStyle: 'medium' })}</td>
+            {sortedItems.map((item) => (
+              <tr key={item.id}>
+                <td><Link to={`/${item.id}`}>{item.properties.title}</Link></td>
+                <td>{item.properties.mag}</td>
+                <td>{new Date(item.properties.time).toLocaleString('en-US', { timeStyle: 'medium', dateStyle: 'medium' })}</td>
               </tr>
             ))}
           </tbody>
