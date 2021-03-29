@@ -1,0 +1,132 @@
+$color-gray1: #ededed;
+$color-gray2: #777777;
+$color-gray3: #444444;
+$link-color: #0011bb;
+$link-visited:#6600cc;
+
+.App {
+    font-family: sans-serif;
+    width: 80%;
+    border: 1px solid $color-gray3;
+    margin: auto;
+		padding-bottom: 20px;
+
+    nav {
+        background-color: $color-gray1;
+        padding: 10px;
+        margin-bottom: 20px;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+          height: 50px;
+          width: auto;
+        }
+
+    }
+  .clear {
+    clear: both;
+  }
+  h1 {
+    color: $color-gray2; 
+  }
+  h2 {
+    color: $color-gray3;
+	}
+	/* Home page */
+  .home-page {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      a {
+        color: $link-color;
+
+        &:visited {
+          color: $link-visited;
+        }
+      }
+      a:visited {
+        color: $link-visited;
+      }
+  }
+		/* user profile page */
+    .user-detail-page  {
+      width: 485px;
+      margin: auto;
+			margin-bottom: 20px;
+
+			h2 {
+				text-align: center
+			}
+      .image {
+        float: left;
+
+        img {
+          width: 100px;
+          height: auto;
+        }
+      }
+      .detail {
+        text-align: left;
+        color: $color-gray2;
+        font-weight: 600;
+        display: flex;
+        flex-direction: column;
+        padding-left: 30px;
+      }
+    }
+
+		@media only screen and (max-width: 1000px) {
+			.user-detail-page  {
+				width: 70%;
+			}
+		}
+
+		/* earthquake info page */
+    .earthquake-detail-page {
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+      .detail {
+        text-align: left;
+        color: $color-gray2;
+        font-weight: 600;
+      } 
+    }
+}
+
+table.detail {
+  tbody {
+      vertical-align: top;
+  }
+  td.label {
+      width: 250px;
+  }
+  td.value {
+    width: 500px
+  }
+}
+.earthquake-detail-page {
+	table{
+		width: 500px;
+		td.label {
+			width: 150px;
+		}
+	}	
+}
+.home-page {
+  table {
+    td {
+			text-align : center;
+		}
+    td:first-child {
+      text-align : left;
+		}
+  }
+}
