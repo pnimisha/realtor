@@ -26,5 +26,8 @@ You will also see any lint errors in the console.
 ### `yarn build`
 Builds the app for production to the `dist` folder.<br />
 
+### `yarn test`
+Runs tests using jest and React Testing Library
+
 
 
