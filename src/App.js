@@ -2,9 +2,9 @@
 /* eslint-disable no-tabs */
 import React, { useEffect, useState } from 'react';
 import {
-  BrowserRouter as Router, Link, Route, Switch
+  BrowserRouter as Router, Link, Route, Switch,
 } from 'react-router-dom';
-//import './App.scss';
+import './App.scss';
 import Home from './components/Home';
 import User from './components/User';
 import Detail from './components/Detail';
