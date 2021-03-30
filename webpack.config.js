@@ -10,6 +10,7 @@ module.exports = {
     filename: 'index_bundle.js',
     publicPath: '/',
   },
+  stats: 'errors-only',
   module: {
     rules: [
       { test: /\.(js)$/, use: 'babel-loader', exclude: /node_modules/ },
@@ -32,7 +33,8 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'public/index.html',
+      template: path.resolve(__dirname, 'public', 'index.html'),
+      filename: './index.html'
     }),
     new ESLintPlugin(),
   ],
